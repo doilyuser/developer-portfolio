@@ -46,7 +46,7 @@
 - **Accessibility**: WCAG compliant with keyboard navigation and screen reader support
 - **SEO Optimized**: Built-in SEO best practices with structured data
 - **Contact Form**: Integrated with EmailJS for easy contact form setup
-- **Performance**: Optimized for Core Web Vitals and fast loading
+- **Performance**: Optimized for Core Web Vitals and fast-loading
 - **Type Safety**: Full TypeScript support for a robust development experience
 - **Easy Customization**: Simple data files to customize your portfolio
 - **Vercel Ready**: Optimized for deployment on Vercel
@@ -61,7 +61,7 @@ Visit the [live demo](https://developer-portfolio-xi-three.vercel.app/) to see t
 
 ## Tech Stack ⚙️
 
-This portfolio template is built with:
+This portfolio template is built with the following:
 
 - **[Next.js 15](https://nextjs.org/)**: React framework with App Router for improved routing and server components
 - **[React 19](https://react.dev/)**: Latest version with improved performance and features
@@ -138,7 +138,7 @@ Visit [http://localhost:3000](http://localhost:3000) to see your portfolio.
    - Choose which sections to display by modifying the `customNavigationItems` array (or set it to `null` to use the default navigation items)
 
 3. **Logo**:
-   - Replace `public/svg/logo.svg` with your own logo
+   - Replace `public/svg/logo.svg` with your logo
    - Update the `orientation` value in `src/data/navigation.data.ts` to match your logo's shape
 
 4. **Images**:
@@ -151,9 +151,9 @@ Visit [http://localhost:3000](http://localhost:3000) to see your portfolio.
 
 ### Optional Customization
 
-1. **Theme Colors**:
-   - Customize colors in `src/app/globals.css`
-   - Use a color from your profile picture for a cohesive look (see tip in `profile.png.example`)
+1. **Theme Colours**:
+   - Customize colours in `src/app/globals.css`
+   - Use a colour from your profile picture for a cohesive look (see tip in `profile.png.example`)
 
 2. **SEO**:
    - Update metadata in `src/app/layout.tsx`
@@ -179,7 +179,7 @@ Visit [http://localhost:3000](http://localhost:3000) to see your portfolio.
 
 ## Theme Options 🎨
 
-Easily modify your portfolio's theme by changing the color variables in `src/app/globals.css`.
+Easily modify your portfolio's theme by changing the colour variables in `src/app/globals.css`.
 
 ### [Copacabana](https://colorkit.co/color/006d8c/) Blue
 
@@ -220,7 +220,7 @@ Easily modify your portfolio's theme by changing the color variables in `src/app
 
 ## EmailJS Setup ✉️
 
-The contact form uses EmailJS to send emails directly from the client-side without requiring a backend server. An example email template is included in the repository.
+The contact form uses EmailJS to send emails directly from the client side without requiring a backend server. An example email template is included in the repository.
 
 ### Setup Steps
 
@@ -244,7 +244,7 @@ The contact form uses EmailJS to send emails directly from the client-side witho
 
 ## Deployment 🌐
 
-This portfolio is optimized for deployment on [Vercel](https://vercel.com/), but can be deployed on any platform that supports Next.js.
+This portfolio is optimized for deployment on [Vercel](https://vercel.com/) but can be deployed on any platform that supports Next.js.
 
 ### Deploying to Vercel
 
@@ -277,7 +277,7 @@ This portfolio template is built with accessibility in mind:
 - **ARIA attributes**: Enhanced screen reader support
 - **Keyboard navigation**: Full keyboard accessibility
 - **Focus management**: Proper focus handling for interactive elements
-- **Color contrast**: WCAG AA compliant color contrast
+- **Colour contrast**: WCAG AA-compliant colour contrast
 - **Responsive design**: Accessible on all device sizes
 - **Screen reader announcements**: Dynamic content changes are announced to screen readers
 - **Form labels**: All form inputs have associated labels
@@ -296,7 +296,7 @@ This portfolio is optimized for search engines:
 - **Semantic HTML**: Helps search engines understand your content
 - **Responsive Design**: Mobile-friendly (a ranking factor)
 - **Performance**: Fast loading times (a ranking factor)
-- **robots.txt**: Customizable file to control search engine crawling behavior
+- **robots.txt**: Customizable file to control search engine crawling behaviour
 
 <br />
 
