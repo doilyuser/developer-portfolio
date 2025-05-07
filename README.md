@@ -1,7 +1,7 @@
 # Developer Portfolio
 
 <p align="center">
-<img src="public/images/og-image.png" alt="Developer Portfolio" width="450px"/>
+<img src="https://github.com/user-attachments/assets/18333531-02b6-4cca-b60f-3f80853461b1" alt="Developer Portfolio" width="450px"/>
 </p>
 
 ## A modern, accessible, and customizable portfolio template for developers built with Next.js 15, React 19, TypeScript, and Tailwind CSS.
@@ -53,7 +53,7 @@
 
 ## Demo 🎬
 
-Visit the [live demo](https://developer-portfolio-template.vercel.app/) to see the portfolio in action.
+Visit the [live demo](https://developer-portfolio-xi-three.vercel.app/) to see the portfolio in action.
 
 <br />
 
@@ -108,7 +108,7 @@ npm install
    - Replace `public/assets/cv.pdf` with your resume/CV
    - Update `src/app/favicon.ico` with your favicon
 
-3. **Configure EmailJS** (see [EmailJS Setup](#emailjs-setup-envelope) section below)
+3. **Configure EmailJS** (see [EmailJS Setup](https://github.com/doilyuser/developer-portfolio?tab=readme-ov-file#emailjs-setup-) section below)
 
 ### Running Locally
 
@@ -177,41 +177,41 @@ Visit [http://localhost:3000](http://localhost:3000) to see your portfolio.
 
 ## Theme Options 🎨
 
-This portfolio comes with several color themes that you can easily apply by changing the color variables in `src/app/globals.css`.
+Easily modify your portfolio's theme by changing the color variables in `src/app/globals.css`.
 
-### Blue Theme
+### Blue Theme - [#006d8c](https://colorkit.co/color/006d8c/)
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="[PLACEHOLDER_URL_BLUE_LIGHT]" width="48%" alt="Blue theme - Light mode"/>
-    <img src="[PLACEHOLDER_URL_BLUE_DARK]" width="48%" alt="Blue theme - Dark mode"/>
+    <img src="https://github.com/user-attachments/assets/7419028f-b5c7-42bf-b012-03d278ac7a6d" width="48%" alt="Blue theme - Light mode"/>
+    <img src="https://github.com/user-attachments/assets/6adff0f9-57be-497e-aca0-55adedaca2c4" width="48%" alt="Blue theme - Dark mode"/>
 </div>
 
-### Grey Theme
+### Grey Theme - [#30474c](https://colorkit.co/color/30474c/)
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="[PLACEHOLDER_URL_GREY_LIGHT]" width="48%" alt="Grey theme - Light mode"/>
-    <img src="[PLACEHOLDER_URL_GREY_DARK]" width="48%" alt="Grey theme - Dark mode"/>
+    <img src="https://github.com/user-attachments/assets/91ecbfb6-b211-49af-8d07-093ea5945ca0" width="48%" alt="Grey theme - Light mode"/>
+    <img src="https://github.com/user-attachments/assets/8430c67b-90c8-4766-bbaa-779688833228" width="48%" alt="Grey theme - Dark mode"/>
 </div>
 
-### Orange Theme
+### Orange Theme - [#d46956](https://colorkit.co/color/d46956/)
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="[PLACEHOLDER_URL_ORANGE_LIGHT]" width="48%" alt="Orange theme - Light mode"/>
-    <img src="[PLACEHOLDER_URL_ORANGE_DARK]" width="48%" alt="Orange theme - Dark mode"/>
+    <img src="https://github.com/user-attachments/assets/572ec385-8480-489e-abdc-80d61c0a6520" width="48%" alt="Orange theme - Light mode"/>
+    <img src="https://github.com/user-attachments/assets/4daf5b77-fdf4-4193-9982-da125a64a5f6" width="48%" alt="Orange theme - Dark mode"/>
 </div>
 
-### Red Theme
+### Red Theme - [#551f1c](https://colorkit.co/color/551f1c/)
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="[PLACEHOLDER_URL_RED_LIGHT]" width="48%" alt="Red theme - Light mode"/>
-    <img src="[PLACEHOLDER_URL_RED_DARK]" width="48%" alt="Red theme - Dark mode"/>
+    <img src="https://github.com/user-attachments/assets/1d41c7f9-43da-4a35-b5ff-a6bd850a3c26" width="48%" alt="Red theme - Light mode"/>
+    <img src="https://github.com/user-attachments/assets/582a54fb-1f7f-4e62-bd8e-e198767274fd" width="48%" alt="Red theme - Dark mode"/>
 </div>
 
-### Yellow Theme
+### Yellow Theme - [#c69524](https://colorkit.co/color/c69524/)
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="[PLACEHOLDER_URL_YELLOW_LIGHT]" width="48%" alt="Yellow theme - Light mode"/>
-    <img src="[PLACEHOLDER_URL_YELLOW_DARK]" width="48%" alt="Yellow theme - Dark mode"/>
+    <img src="https://github.com/user-attachments/assets/d983dee3-3938-41f9-af8a-8607dacd9aae" width="48%" alt="Yellow theme - Light mode"/>
+    <img src="https://github.com/user-attachments/assets/191503cc-1190-4fb0-ab84-357a9e1c9420" width="48%" alt="Yellow theme - Dark mode"/>
 </div>
 
 <br />
@@ -249,7 +249,12 @@ This portfolio is optimized for deployment on [Vercel](https://vercel.com/), but
 4. Add your environment variables (for EmailJS)
 5. Click "Deploy"
 
-Vercel will automatically detect that you're using Next.js and configure the build settings accordingly.
+Vercel will automatically detect that you're using Next.js and configure the build settings accordingly:
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/c9b3f9b4-0e15-4894-8e55-124d98af67bb" alt="Screenshot of vercel settings page" width="450px"/>
+</p>
+
 
 ### Other Deployment Options
 
@@ -289,6 +294,14 @@ This portfolio is optimized for search engines:
 - **robots.txt**: Customizable file to control search engine crawling behavior
 
 <br />
+
+## Photography 📷
+
+Stock photos sourced from [Unsplash](https://unsplash.com/):
+- [Charles Deluvio](https://unsplash.com/@charlesdeluvio)
+- [Lance Reis](https://unsplash.com/s/photos/lance-reis)
+- [Maeva Vigier](https://unsplash.com/s/photos/maeva-vigier)
+- [Toa Heftiba](https://unsplash.com/s/photos/toa-heftiba)
 
 ## License 📄
 
