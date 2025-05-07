@@ -1,0 +1,12 @@
+This file is a placeholder for your portfolio's logo.
+
+In a real implementation, replace this with an `.svg` vector image file. Support for both square (1:1 ratio) and landscape (3:1 ratio) is provided.
+
+*Design Tips:*
+1. Ensure the logo is clean and professional.
+2. Make the logo visually represent your portfolio’s brand.
+3. Optimize the SVG for Tailwind CSS by removing `fill` and `stroke` attributes, allowing Tailwind classes to control these properties.
+
+Once you’ve created your logo:
+1. Rename this file to `logo.svg` or replace it entirely.
+2. Update the `navigationData.logo.orientation` value in `src/data/navigation.data.ts` to either `LogoOrientation.Square` or `LogoOrientation.Landscape`.

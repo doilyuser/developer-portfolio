@@ -1,0 +1,12 @@
+This file is a placeholder for your favicon.
+
+In a real implementation, replace this with an `.ico` image file used to represent your portfolio in the browser’s address bar, history and on tabs.
+
+*Design Tips:*
+1. Ensure the favicon is clean and professional.
+2. Make it visually representative of your portfolio’s brand.
+3. Use a square aspect ratio (1:1) with a minimum size of 8x8 pixels (recommended: 48x48 pixels or larger).
+
+If you’ve already created a square `logo.svg`, you can easily convert it to a favicon using an online tool (e.g., freeconvert.com/svg-to-ico).
+
+After creating your favicon, rename this file to `favicon.ico` or replace it entirely.
