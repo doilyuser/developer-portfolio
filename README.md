@@ -179,35 +179,35 @@ Visit [http://localhost:3000](http://localhost:3000) to see your portfolio.
 
 Easily modify your portfolio's theme by changing the color variables in `src/app/globals.css`.
 
-### Blue Theme - [#006d8c](https://colorkit.co/color/006d8c/)
+### [Copacabana](https://colorkit.co/color/006d8c/) Blue
 
 <div style="display: flex; justify-content: space-between;">
     <img src="https://github.com/user-attachments/assets/7419028f-b5c7-42bf-b012-03d278ac7a6d" width="48%" alt="Blue theme - Light mode"/>
     <img src="https://github.com/user-attachments/assets/6adff0f9-57be-497e-aca0-55adedaca2c4" width="48%" alt="Blue theme - Dark mode"/>
 </div>
 
-### Grey Theme - [#30474c](https://colorkit.co/color/30474c/)
+### [Little Mermaid](https://colorkit.co/color/30474c/) Grey
 
 <div style="display: flex; justify-content: space-between;">
     <img src="https://github.com/user-attachments/assets/91ecbfb6-b211-49af-8d07-093ea5945ca0" width="48%" alt="Grey theme - Light mode"/>
     <img src="https://github.com/user-attachments/assets/8430c67b-90c8-4766-bbaa-779688833228" width="48%" alt="Grey theme - Dark mode"/>
 </div>
 
-### Orange Theme - [#d46956](https://colorkit.co/color/d46956/)
+### [Track and Field](https://colorkit.co/color/d46956/) Orange
 
 <div style="display: flex; justify-content: space-between;">
     <img src="https://github.com/user-attachments/assets/572ec385-8480-489e-abdc-80d61c0a6520" width="48%" alt="Orange theme - Light mode"/>
     <img src="https://github.com/user-attachments/assets/4daf5b77-fdf4-4193-9982-da125a64a5f6" width="48%" alt="Orange theme - Dark mode"/>
 </div>
 
-### Red Theme - [#551f1c](https://colorkit.co/color/551f1c/)
+### [Torrefacto Roast](https://colorkit.co/color/551f1c/) Red
 
 <div style="display: flex; justify-content: space-between;">
     <img src="https://github.com/user-attachments/assets/1d41c7f9-43da-4a35-b5ff-a6bd850a3c26" width="48%" alt="Red theme - Light mode"/>
     <img src="https://github.com/user-attachments/assets/582a54fb-1f7f-4e62-bd8e-e198767274fd" width="48%" alt="Red theme - Dark mode"/>
 </div>
 
-### Yellow Theme - [#c69524](https://colorkit.co/color/c69524/)
+### [Mustard Seed](https://colorkit.co/color/c69524/) Yellow
 
 <div style="display: flex; justify-content: space-between;">
     <img src="https://github.com/user-attachments/assets/d983dee3-3938-41f9-af8a-8607dacd9aae" width="48%" alt="Yellow theme - Light mode"/>
