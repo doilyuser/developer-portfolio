@@ -1,7 +1,7 @@
 # Developer Portfolio
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/18333531-02b6-4cca-b60f-3f80853461b1" alt="Developer Portfolio" width="450px"/>
+<img src="examples/orange-light.png" alt="Developer Portfolio" width="450px"/>
 </p>
 
 ## A modern, accessible, and customizable portfolio template for developers built with Next.js 15, React 19, TypeScript, and Tailwind CSS.
@@ -16,22 +16,24 @@
 <br />
 
 ## Table of Contents 📑
-- [Features](#features-sparkles)
-- [Demo](#demo-movie_camera)
-- [Tech Stack](#tech-stack-gear)
-- [Getting Started](#getting-started-rocket)
+- [Features](#features-)
+- [Demo](#demo-)
+- [Tech Stack](#tech-stack-)
+- [Getting Started](#getting-started-)
   - [Forking the Repository](#forking-the-repository)
   - [Installation](#installation)
   - [Basic Configuration](#basic-configuration)
   - [Running Locally](#running-locally)
-- [Customization](#customization-art)
+- [Customization](#customization-)
   - [Essential Customization](#essential-customization)
   - [Optional Customization](#optional-customization)
-- [EmailJS Setup](#emailjs-setup-envelope)
-- [Deployment](#deployment-globe_with_meridians)
-- [Accessibility](#accessibility-wheelchair)
-- [SEO Optimization](#seo-optimization-mag)
-- [License](#license-page_with_curl)
+- [Theme Options](#theme-options-)
+- [EmailJS Setup](#emailjs-setup-)
+- [Deployment](#deployment-)
+- [Accessibility](#accessibility-)
+- [SEO Optimization](#seo-optimization-)
+- [Contributors](#contributors-)
+- [License](#license-)
 
 <br />
 
@@ -122,7 +124,7 @@ Visit [http://localhost:3000](http://localhost:3000) to see your portfolio.
 
 <br />
 
-## Customization 🎨
+## Customization 🎛️
 
 ### Essential Customization
 
@@ -182,51 +184,54 @@ Easily modify your portfolio's theme by changing the color variables in `src/app
 ### [Copacabana](https://colorkit.co/color/006d8c/) Blue
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="https://github.com/user-attachments/assets/7419028f-b5c7-42bf-b012-03d278ac7a6d" width="48%" alt="Blue theme - Light mode"/>
-    <img src="https://github.com/user-attachments/assets/6adff0f9-57be-497e-aca0-55adedaca2c4" width="48%" alt="Blue theme - Dark mode"/>
+    <img src="examples/blue-light.png" width="48%" alt="Blue theme - Light mode"/>
+    <img src="examples/blue-dark.png" width="48%" alt="Blue theme - Dark mode"/>
 </div>
 
 ### [Little Mermaid](https://colorkit.co/color/30474c/) Grey
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="https://github.com/user-attachments/assets/91ecbfb6-b211-49af-8d07-093ea5945ca0" width="48%" alt="Grey theme - Light mode"/>
-    <img src="https://github.com/user-attachments/assets/8430c67b-90c8-4766-bbaa-779688833228" width="48%" alt="Grey theme - Dark mode"/>
+    <img src="examples/grey-light.png" width="48%" alt="Grey theme - Light mode"/>
+    <img src="examples/grey-dark.png" width="48%" alt="Grey theme - Dark mode"/>
 </div>
 
 ### [Track and Field](https://colorkit.co/color/d46956/) Orange
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="https://github.com/user-attachments/assets/572ec385-8480-489e-abdc-80d61c0a6520" width="48%" alt="Orange theme - Light mode"/>
-    <img src="https://github.com/user-attachments/assets/4daf5b77-fdf4-4193-9982-da125a64a5f6" width="48%" alt="Orange theme - Dark mode"/>
+    <img src="examples/orange-light.png" width="48%" alt="Orange theme - Light mode"/>
+    <img src="examples/orange-dark.png" width="48%" alt="Orange theme - Dark mode"/>
 </div>
 
 ### [Torrefacto Roast](https://colorkit.co/color/551f1c/) Red
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="https://github.com/user-attachments/assets/1d41c7f9-43da-4a35-b5ff-a6bd850a3c26" width="48%" alt="Red theme - Light mode"/>
-    <img src="https://github.com/user-attachments/assets/582a54fb-1f7f-4e62-bd8e-e198767274fd" width="48%" alt="Red theme - Dark mode"/>
+    <img src="examples/red-light.png" width="48%" alt="Red theme - Light mode"/>
+    <img src="examples/red-dark.png" width="48%" alt="Red theme - Dark mode"/>
 </div>
 
 ### [Mustard Seed](https://colorkit.co/color/c69524/) Yellow
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="https://github.com/user-attachments/assets/d983dee3-3938-41f9-af8a-8607dacd9aae" width="48%" alt="Yellow theme - Light mode"/>
-    <img src="https://github.com/user-attachments/assets/191503cc-1190-4fb0-ab84-357a9e1c9420" width="48%" alt="Yellow theme - Dark mode"/>
+    <img src="examples/yellow-light.png" width="48%" alt="Yellow theme - Light mode"/>
+    <img src="examples/yellow-dark.png" width="48%" alt="Yellow theme - Dark mode"/>
 </div>
 
 <br />
 
-## EmailJS Setup 📧
+## EmailJS Setup ✉️
 
-The contact form uses EmailJS to send emails directly from the client-side. Follow these steps to set it up:
+The contact form uses EmailJS to send emails directly from the client-side without requiring a backend server. An example email template is included in the repository.
+
+### Setup Steps
 
 1. Create a free account at [EmailJS](https://www.emailjs.com/)
 2. Create a new Email Service (Gmail, Outlook, etc.)
-3. Create a new Email Template with the following variables:
-   - `name`: Sender's name
-   - `email`: Sender's email
-   - `message`: Message content
-4. Get your Service ID, Template ID, and Public Key
+3. Create a new Email Template or use the example template provided in `examples/email-template.html`
+   - Make sure to include the following variables:
+     - `{{name}}`: Sender's name
+     - `{{email}}`: Sender's email
+     - `{{message}}`: Message content
+4. Get your Service ID, Template ID, and Public Key from the EmailJS dashboard
 5. Create a `.env.local` file in the root directory with the following variables:
    ```
    NEXT_PUBLIC_SERVICE_ID=your_service_id
@@ -252,7 +257,7 @@ This portfolio is optimized for deployment on [Vercel](https://vercel.com/), but
 Vercel will automatically detect that you're using Next.js and configure the build settings accordingly:
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/c9b3f9b4-0e15-4894-8e55-124d98af67bb" alt="Screenshot of vercel settings page" width="450px"/>
+<img src="https://github.com/user-attachments/assets/c9b3f9b4-0e15-4894-8e55-124d98af67bb" alt="Screenshot of vercel settings page" width="600px"/>
 </p>
 
 
@@ -264,7 +269,7 @@ Vercel will automatically detect that you're using Next.js and configure the bui
 
 <br />
 
-## Accessibility ♿
+## Accessibility 🦾
 
 This portfolio template is built with accessibility in mind:
 
@@ -295,13 +300,17 @@ This portfolio is optimized for search engines:
 
 <br />
 
-## Photography 📷
+## Contributors 👯
+
+### Photography
 
 Stock photos sourced from [Unsplash](https://unsplash.com/):
 - [Charles Deluvio](https://unsplash.com/@charlesdeluvio)
 - [Lance Reis](https://unsplash.com/s/photos/lance-reis)
 - [Maeva Vigier](https://unsplash.com/s/photos/maeva-vigier)
 - [Toa Heftiba](https://unsplash.com/s/photos/toa-heftiba)
+
+<br />
 
 ## License 📄
 
