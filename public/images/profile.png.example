@@ -1,0 +1,18 @@
+This file is a placeholder for your profile picture.
+
+In a real implementation, replace this with a square JPG or PNG image file (recommended dimensions: at least 800x800 pixels) that will appear on your portfolio's landing page.
+
+*Design Tips:*
+1. Use a professional headshot.
+2. Opt for a clean, polished look.
+3. Match the image's colors to your portfolio theme.
+
+*Optional Step:*
+1. Use a color picker tool (e.g., imagecolorpicker.com) to find the hex code of a key color in your profile picture (e.g., #123abc).
+2. Update the colors in your `globals.css` file:
+  - `accent`: the selected color - #123abc
+  - `accent-strong`: a slightly lighter shade - #3d67cd
+  - `accent-strong` in `prefers-color-scheme: dark`: a slightly darker shade - #0a288b
+  Tip: I use the brighten/darken tools available at colorkit.co/color/123abc/
+
+After creating your profile picture, rename this file to `profile.jpg` or `profile.png`, or replace it entirely. Ensure the path is correct in `landing.data.ts`.

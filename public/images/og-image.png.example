@@ -1,0 +1,11 @@
+This file is a placeholder for the Open Graph (OG) image.
+
+In a real implementation, replace this with a JPG or PNG image file (recommended dimensions: 1200x630 pixels) that represents your portfolio and appears when your site is shared on social media.
+
+*Design Tips:*
+1. Include your name and profession prominently.
+2. Use a clean, professional design.
+3. Match the color palette of your portfolio.
+4. Optimize the image for web use (compressed without significant quality loss).
+
+Once you've created your image, rename this file to `og-image.jpg` or `og-image.png`, or replace it entirely. Ensure the path is correct in `layout.tsx`.

@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+:root {
+  /* Base semantic colors */
+  --surface-primary: #ffffff; /* Light background */
+  --text-primary: #171717; /* Main text color */
+  --accent: #ec8668; /* Highlight/accent color */
+
+  /* Interactive states */
+  --accent-strong: #d46956; /* Accent hover state */
+  --text-secondary: #383838; /* Secondary text, hover state */
+  --surface-secondary: #f2f2f2; /* Secondary surface, hover state */
+
+  /* UI elements */
+  --surface-elevated: #fafafa; /* Box/card background */
+  --outline: #1a1a1a; /* Element boundaries, dividers & borders */
+  --text-muted: #666666; /* Footer/muted text */
+}
+
+@theme inline {
+  --color-surface-primary: var(--surface-primary);
+  --color-text-primary: var(--text-primary);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-text-secondary: var(--text-secondary);
+  --color-surface-secondary: var(--surface-secondary);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-outline: var(--outline);
+  --color-text-muted: var(--text-muted);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --breakpoint-xs: 30rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface-primary: #0a0a0a; /* Dark background */
+    --text-primary: #ededed; /* Main text in dark mode */
+    --accent-strong: #ee9880; /* Accent hover in dark mode */
+    --text-secondary: #cccccc; /* Secondary text in dark mode */
+    --surface-secondary: #1a1a1a; /* Secondary surface in dark mode */
+    --surface-elevated: #000000; /* Box/card in dark mode */
+    --outline: #f2f2f2; /* Element boundaries, dividers & borders in dark mode */
+  }
+}
+
+body {
+  background: var(--surface-primary);
+  color: var(--text-primary);
+  font-family: Arial, Helvetica, sans-serif;
+}
