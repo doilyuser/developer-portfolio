@@ -3,7 +3,7 @@ User-agent: *
 Disallow:
 
 # Sitemap location
-Sitemap: https://www.example.com/sitemap.xml
+Sitemap: https://developer-portfolio-xi-three.vercel.app/sitemap.xml
 
 # Crawl delay to prevent server overload (optional)
 # Crawl-delay: 10

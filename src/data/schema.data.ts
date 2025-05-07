@@ -1,7 +1,7 @@
 import { landingData } from './landing.data'
 import { skillsData } from './skills.data'
 
-export const url = 'https://www.example.com'
+export const url = 'https://developer-portfolio-xi-three.vercel.app'
 
 export const personSchema = {
   '@context': 'https://schema.org',
@@ -22,7 +22,7 @@ export const personSchema = {
     'Frontend Development',
     'UI/UX Design',
     'Software Engineering',
-    // Add more areas of expertise
+    // Add more as required
   ],
   alumniOf: [
     {
