@@ -1,7 +1,7 @@
 import { landingData } from './landing.data'
 import { skillsData } from './skills.data'
 
-export const url = 'https://www.example.com'
+export const url = 'https://developer-portfolio-xi-three.vercel.app'
 
 export const personSchema = {
   '@context': 'https://schema.org',
