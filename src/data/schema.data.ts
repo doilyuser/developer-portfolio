@@ -22,7 +22,7 @@ export const personSchema = {
     'Frontend Development',
     'UI/UX Design',
     'Software Engineering',
-    // Add more areas of expertise
+    // Add more as required
   ],
   alumniOf: [
     {

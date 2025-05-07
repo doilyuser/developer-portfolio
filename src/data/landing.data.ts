@@ -26,6 +26,7 @@ export const landingData = {
     { name: 'Youtube', href: undefined, icon: FaYoutube },
     { name: 'Blogger', href: undefined, icon: FaBlogger },
     { name: 'Facebook', href: 'https://www.facebook.com/john/', icon: FaFacebook },
+    // Add more as required
   ],
   icons: {
     down: IoMdArrowDown,
