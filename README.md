@@ -195,7 +195,7 @@ Easily modify your portfolio's theme by changing the colour variables in `src/ap
     <img src="examples/grey-dark.png" width="48%" alt="Grey theme - Dark mode"/>
 </div>
 
-### [Track and Field](https://colorkit.co/color/d46956/) Orange
+### [Track and Field](https://colorkit.co/color/d46956/) Orange **(default)**
 
 <div style="display: flex; justify-content: space-between;">
     <img src="examples/orange-light.png" width="48%" alt="Orange theme - Light mode"/>
