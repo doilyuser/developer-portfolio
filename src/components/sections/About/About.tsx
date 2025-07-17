@@ -4,18 +4,15 @@ const data = aboutData
 
 export default function About() {
   return (
-    <section
-      id={data.id}
-      className="mx-auto min-h-screen w-screen max-w-screen-xl px-4 lg:px-6 flex flex-col"
-    >
+    <section id={data.id} className="mx-auto flex min-h-screen w-screen max-w-screen-xl flex-col px-4 lg:px-6">
       {/* Header */}
       <div className="mt-20">
         <h2 className="text-left font-mono text-xs">{data.title}</h2>
-        <p className="text-accent mb-12 text-right text-9xl underline">{data.subtitle}</p>
+        <p className="mb-12 text-right text-9xl text-accent underline">{data.subtitle}</p>
       </div>
 
       {/* Body */}
-      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:mt-20">{data.body}</div>
+      <div className="grid grid-cols-1 gap-8 lg:mt-20 lg:grid-cols-2">{data.body}</div>
     </section>
   )
 }

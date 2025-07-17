@@ -4,7 +4,7 @@
 <img src="examples/orange-light.png" alt="Developer Portfolio" width="450px"/>
 </p>
 
-## A modern, accessible, and customizable portfolio template for developers built with Next.js 15, React 19, TypeScript, and Tailwind CSS.
+## A modern, accessible, and customisable portfolio template for developers built with Next.js 15, React 19, TypeScript, and Tailwind CSS.
 
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19-blue?style=flat&logo=react)](https://react.dev/)
@@ -13,9 +13,23 @@
 [![Turbopack](https://img.shields.io/badge/Turbopack-Enabled-yellow?style=flat&logo=webpack)](https://turbo.build/pack)
 [![Vercel](https://img.shields.io/badge/Optimized%20for-Vercel-black?style=flat&logo=vercel)](https://vercel.com/)
 
+## 📢 Latest Update
+
+**Version 0.2.0** - _17/07/25_  
+🎉 **New Skills Component**: Introducing a fully interactive skills showcase with carousel functionality, accessibility features, and comprehensive customisation options.
+
+<details>
+<summary><strong>Previous Updates</strong></summary>
+
+**Version 0.1.0** - _07/05/25_  
+🚀 **MVP Release**: Initial release of the developer portfolio template with core functionality including responsive design, dark mode support, contact form integration, and essential customisation options.
+
+</details>
+
 <br />
 
 ## Table of Contents 📑
+
 - [Features](#features-)
 - [Demo](#demo-)
 - [Tech Stack](#tech-stack-)
@@ -24,14 +38,15 @@
   - [Installation](#installation)
   - [Basic Configuration](#basic-configuration)
   - [Running Locally](#running-locally)
-- [Customization](#customization-)
-  - [Essential Customization](#essential-customization)
-  - [Optional Customization](#optional-customization)
+- [Customisation](#customisation-)
+  - [Essential Customisation](#essential-customisation)
+  - [Optional Customisation](#optional-customisation)
+- [Coming Soon](#coming-soon-)
 - [Theme Options](#theme-options-)
 - [EmailJS Setup](#emailjs-setup-)
 - [Deployment](#deployment-)
 - [Accessibility](#accessibility-)
-- [SEO Optimization](#seo-optimization-)
+- [SEO Optimisation](#seo-optimisation-)
 - [Contributors](#contributors-)
 - [License](#license-)
 
@@ -48,7 +63,7 @@
 - **Contact Form**: Integrated with EmailJS for easy contact form setup
 - **Performance**: Optimized for Core Web Vitals and fast-loading
 - **Type Safety**: Full TypeScript support for a robust development experience
-- **Easy Customization**: Simple data files to customize your portfolio
+- **Easy Customisation**: Simple data files to customise your portfolio
 - **Vercel Ready**: Optimized for deployment on Vercel
 
 <br />
@@ -106,7 +121,7 @@ npm install
 2. **Replace Images**:
    - Replace `public/images/profile.png` with your profile picture
    - Replace `public/images/og-image.png` with your custom Open Graph image
-   - Replace `public/svg/logo.svg` with your logo
+   - Replace `public/images/logo.svg` with your logo
    - Replace `public/assets/cv.pdf` with your resume/CV
    - Update `src/app/favicon.ico` with your favicon
 
@@ -124,9 +139,9 @@ Visit [http://localhost:3000](http://localhost:3000) to see your portfolio.
 
 <br />
 
-## Customization 🎛️
+## Customisation 🎛️
 
-### Essential Customization
+### Essential Customisation
 
 1. **Personal Information**:
    - Update your name, title, and description in `src/data/landing.data.ts`
@@ -134,11 +149,12 @@ Visit [http://localhost:3000](http://localhost:3000) to see your portfolio.
    - Update social media links in `src/data/landing.data.ts`
 
 2. **Navigation**:
-   - Customize navigation items in `src/data/navigation.data.ts`
-   - Choose which sections to display by modifying the `customNavigationItems` array (or set it to `null` to use the default navigation items)
+   - Navigation items and rendered components are handled in `src/data/home.data.ts`
+   - Enable/disable sections by setting boolean values in the `homeSections` object
+   - Customise navigation labels in `src/data/navigation.data.ts`
 
 3. **Logo**:
-   - Replace `public/svg/logo.svg` with your logo
+   - Replace `public/images/logo.svg` with your logo
    - Update the `orientation` value in `src/data/navigation.data.ts` to match your logo's shape
 
 4. **Images**:
@@ -149,18 +165,32 @@ Visit [http://localhost:3000](http://localhost:3000) to see your portfolio.
 5. **Resume/CV**:
    - Replace `public/assets/cv.pdf` with your resume/CV
 
-### Optional Customization
+### Optional Customisation
 
 1. **Theme Colours**:
    - Customize colours in `src/app/globals.css`
    - Use a colour from your profile picture for a cohesive look (see tip in `profile.png.example`)
+   - See [Theme Options](#theme-options-) for examples.
 
 2. **SEO**:
    - Update metadata in `src/app/layout.tsx`
    - Customize keywords for better search engine visibility
    - Update structured data in `src/data/schema.data.ts`
 
-3. **Content Sections**:
+3. **Components**:
+   The portfolio includes several useful components and corresponding data files:
+
+   **Fully Implemented Components:**
+   - **Landing.tsx** (`src/data/landing.data.ts`): Configure your profile, introduction, social links, and CV download
+   - **Skills.tsx** (`src/data/skills.data.ts`): Interactive carousel with 50+ technology icons. Enable/disable skills by setting `display: true/false`
+   - **Contact.tsx** (`src/data/contact.data.ts`): Contact form, personal contact information, and consent settings. Ensure your [EmailJS Setup](#emailjs-setup-) is correct before enabling.
+
+   **Placeholder Components** (coming in future updates):
+   - About, Education, Experience, Projects, Achievements, Services, Testimonials, Blog
+
+   Where further configuration is necessary it will be detailed through inline comments in the corresponding data files.
+
+4. **Content Sections**:
    - Customize content in the respective data files:
      - `src/data/about.data.ts`
      - `src/data/experience.data.ts`
@@ -168,12 +198,27 @@ Visit [http://localhost:3000](http://localhost:3000) to see your portfolio.
      - `src/data/skills.data.ts`
      - `src/data/blog.data.ts`
 
-4. **Footer**:
+5. **Footer**:
    - Enable/disable the footer in `src/data/footer.data.ts`
 
-5. **Privacy Policy & Terms and Conditions**:
+6. **Privacy Policy & Terms and Conditions**:
    - Add links to your privacy policy and terms and conditions in `src/data/contact.data.ts`
    - These will appear in the contact form's consent section
+
+<br />
+
+## Coming Soon 🚧
+
+The following components are currently placeholders and will be fully implemented in future updates:
+
+- **About**: Personal background and story
+- **Education**: Academic qualifications and certifications
+- **Experience**: Professional work history and roles
+- **Projects**: Portfolio of completed projects and/or case studies
+- **Achievements**: Awards, recognitions, and notable accomplishments
+- **Services**: Professional services offered
+- **Testimonials**: Client and/or colleague recommendations
+- **Blog**: Article previews and links
 
 <br />
 
@@ -260,7 +305,6 @@ Vercel will automatically detect that you're using Next.js and configure the bui
 <img src="https://github.com/user-attachments/assets/c9b3f9b4-0e15-4894-8e55-124d98af67bb" alt="Screenshot of vercel settings page" width="600px"/>
 </p>
 
-
 ### Other Deployment Options
 
 - **Netlify**: Follow the [Netlify deployment guide for Next.js](https://docs.netlify.com/integrations/frameworks/next-js/overview/)
@@ -284,19 +328,19 @@ This portfolio template is built with accessibility in mind:
 
 <br />
 
-## SEO Optimization 🔍
+## SEO Optimisation 🔍
 
 This portfolio is optimized for search engines:
 
-- **Metadata**: Customizable title, description, and keywords
+- **Metadata**: Customisable title, description, and keywords
 - **Structured Data**: JSON-LD schema for better search engine understanding
-- **OpenGraph**: Social media sharing optimization
+- **OpenGraph**: Social media sharing optimisation
 - **Twitter Cards**: Twitter-specific metadata
 - **Canonical URLs**: Prevents duplicate content issues
 - **Semantic HTML**: Helps search engines understand your content
 - **Responsive Design**: Mobile-friendly (a ranking factor)
 - **Performance**: Fast loading times (a ranking factor)
-- **robots.txt**: Customizable file to control search engine crawling behaviour
+- **robots.txt**: Customisable file to control search engine crawling behaviour
 
 <br />
 
@@ -304,7 +348,8 @@ This portfolio is optimized for search engines:
 
 ### Photography
 
-Stock photos sourced from [Unsplash](https://unsplash.com/):
+Stock photos used in examples sourced from [Unsplash](https://unsplash.com/):
+
 - [Charles Deluvio](https://unsplash.com/@charlesdeluvio)
 - [Lance Reis](https://unsplash.com/s/photos/lance-reis)
 - [Maeva Vigier](https://unsplash.com/s/photos/maeva-vigier)

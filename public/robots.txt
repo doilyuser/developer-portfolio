@@ -5,5 +5,5 @@ Disallow:
 # Sitemap location
 Sitemap: https://developer-portfolio-xi-three.vercel.app/sitemap.xml
 
-# Crawl delay to prevent server overload (optional)
-# Crawl-delay: 10
+# Crawl delay to prevent server strain (optional)
+Crawl-delay: 10

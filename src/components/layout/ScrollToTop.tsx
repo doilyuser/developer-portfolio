@@ -1,7 +1,7 @@
 'use client'
 
 import { useCallback, JSX } from 'react'
-import { IoMdArrowUp } from 'react-icons/io'
+import { ArrowUp } from '@/components/icons'
 import { Transition } from '@headlessui/react'
 
 import { ScreenReaderSpan } from '@/ui'
@@ -31,13 +31,9 @@ export default function ScrollToTop(): JSX.Element {
       leaveTo="opacity-0"
     >
       <div className="fixed right-8 bottom-10 z-50 text-5xl">
-        <button
-          onClick={scrollToTop}
-          aria-label="Back to top of page"
-          className="cursor-pointer rounded-full"
-        >
-          <IoMdArrowUp
-            className="border-outline/20 hover:bg-surface-secondary rounded-full border border-solid transition-colors duration-300 ease-in-out hover:border-transparent"
+        <button onClick={scrollToTop} aria-label="Back to top of page" className="cursor-pointer rounded-full">
+          <ArrowUp
+            className="h-12 w-auto rounded-full border border-solid border-outline/20 transition-colors duration-300 ease-in-out hover:border-transparent hover:bg-surface-secondary"
             aria-hidden="true"
           />
           <ScreenReaderSpan text="Back to top of page" />

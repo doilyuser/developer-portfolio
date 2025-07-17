@@ -1,6 +1,5 @@
 import { contactData } from '../data/contact.data'
-import { FaTwitter, FaLinkedin, FaGithub, FaYoutube, FaBlogger, FaFacebook } from 'react-icons/fa'
-import { IoMdArrowDown } from 'react-icons/io'
+import { X, LinkedIn, GitHub, Youtube, Blogger, Facebook, ArrowDown } from '@/components/icons'
 
 const cv = '/assets/cv.pdf'
 const profilePicture = '/images/profile.png'
@@ -20,15 +19,15 @@ export const landingData = {
     contactUs: 'Get in touch',
   },
   socials: [
-    { name: 'GitHub', href: 'https://github.com/john', icon: FaGithub },
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/john/', icon: FaLinkedin },
-    { name: 'Twitter', href: undefined, icon: FaTwitter },
-    { name: 'Youtube', href: undefined, icon: FaYoutube },
-    { name: 'Blogger', href: undefined, icon: FaBlogger },
-    { name: 'Facebook', href: 'https://www.facebook.com/john/', icon: FaFacebook },
+    { name: 'GitHub', href: 'https://github.com/john', icon: GitHub },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/john/', icon: LinkedIn },
+    { name: 'Twitter', href: undefined, icon: X },
+    { name: 'Youtube', href: undefined, icon: Youtube },
+    { name: 'Blogger', href: undefined, icon: Blogger },
+    { name: 'Facebook', href: 'https://www.facebook.com/john/', icon: Facebook },
     // Add more as required
   ],
   icons: {
-    down: IoMdArrowDown,
+    down: ArrowDown,
   },
 }

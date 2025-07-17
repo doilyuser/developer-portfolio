@@ -1,4 +1,4 @@
-import { IconType } from 'react-icons'
+import { IconType } from './icon'
 
 export interface NavigationData {
   icons: {
@@ -29,7 +29,8 @@ export interface LogoProps {
 }
 
 export interface NavigationItem {
-  name: string
+  label: string
+  enabled: boolean
   href: string
   icon: IconType
   current?: boolean

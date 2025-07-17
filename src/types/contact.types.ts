@@ -1,4 +1,4 @@
-import { IconType } from 'react-icons'
+import { IconType } from './icon'
 import { ConsentData } from './consentSection.types'
 
 export interface ContactInfoItem {
@@ -27,6 +27,7 @@ export interface SubmitButton {
 }
 
 export interface ContactData {
+  id: string
   name: string
   title: string
   subtitle: string

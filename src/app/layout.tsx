@@ -4,7 +4,7 @@ import Script from 'next/script'
 import { Geist, Geist_Mono } from 'next/font/google'
 
 import { Footer } from '@/components'
-import { url, websiteSchema, personSchema } from '@/data/schema.data'
+import { url, websiteSchema, personSchema, skillsSchema } from '@/data/schema.data'
 import { contactData } from '@/data/contact.data'
 import { footerData } from '@/data/footer.data'
 
@@ -26,6 +26,7 @@ export const metadata: Metadata = {
   description:
     'John is a software developer specializing in web development, creating responsive and user-friendly applications with modern technologies.',
   keywords: [
+    /* Add more as required: */
     'software developer',
     'web developer',
     'fullstack developer',
@@ -33,7 +34,6 @@ export const metadata: Metadata = {
     'next.js',
     'portfolio',
     'john doe',
-    // Add more as required
   ],
   authors: [{ name: contactData.name }],
   creator: contactData.name,
@@ -59,7 +59,8 @@ export const metadata: Metadata = {
     siteName: "John's Portfolio",
     images: [
       {
-        url: '/og-image.png', // You'll need to create this image
+        /* You will need to create this image: */
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: `John Doe | Software Developer | Phone: 123-456-7890 | Github: /john | LinkedIn: /in/john | Facebook: /john.`,
@@ -71,14 +72,16 @@ export const metadata: Metadata = {
     title: 'John | Developer Portfolio',
     description:
       'John is a software developer specializing in web development, creating responsive and user-friendly applications with modern technologies.',
-    images: ['/og-image.png'], // Same image as OpenGraph
-    creator: '@john', // Replace with your Twitter handle if applicable
+    /* Same image as OpenGraph: */
+    images: ['/og-image.png'],
+    /* Replace with your Twitter handle if applicable: */
+    creator: '@john',
   },
   alternates: {
     canonical: baseUrl,
   },
   verification: {
-    // Add verification codes if you have them
+    /* Add verification codes if you have them: */
     // google: "your-google-verification-code",
     // yandex: "your-yandex-verification-code",
   },
@@ -102,6 +105,11 @@ export default function RootLayout({
           id="schema-website"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <Script
+          id="schema-skills"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(skillsSchema) }}
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
