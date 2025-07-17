@@ -32,18 +32,18 @@
 
 - [Features](#features-)
 - [Demo](#demo-)
-- [Tech Stack](#tech-stack-)
+- [Tech Stack](tech-stack-%EF%B8%8F)
 - [Getting Started](#getting-started-)
   - [Forking the Repository](#forking-the-repository)
   - [Installation](#installation)
   - [Basic Configuration](#basic-configuration)
   - [Running Locally](#running-locally)
-- [Customisation](#customisation-)
+- [Customisation](#customisation-%EF%B8%8F)
   - [Essential Customisation](#essential-customisation)
   - [Optional Customisation](#optional-customisation)
 - [Coming Soon](#coming-soon-)
 - [Theme Options](#theme-options-)
-- [EmailJS Setup](#emailjs-setup-)
+- [EmailJS Setup](#emailjs-setup-%EF%B8%8F)
 - [Deployment](#deployment-)
 - [Accessibility](#accessibility-)
 - [SEO Optimisation](#seo-optimisation-)
@@ -55,13 +55,13 @@
 ## Features ✨
 
 - **Modern Tech Stack**: Built with Next.js 15, React 19, TypeScript, and Tailwind CSS
-- **Fast Development**: Powered by Turbopack for lightning-fast development experience
+- **Fast Development**: Powered by Turbopack for a lightning-fast development experience
 - **Responsive Design**: Looks great on all devices, from mobile to desktop
 - **Dark Mode Support**: Automatic dark mode based on user preferences
 - **Accessibility**: WCAG compliant with keyboard navigation and screen reader support
-- **SEO Optimized**: Built-in SEO best practices with structured data
+- **SEO Optimised**: Built-in SEO best practices with structured data
 - **Contact Form**: Integrated with EmailJS for easy contact form setup
-- **Performance**: Optimized for Core Web Vitals and fast-loading
+- **Performance**: Optimised for Core Web Vitals and fast-loading
 - **Type Safety**: Full TypeScript support for a robust development experience
 - **Easy Customisation**: Simple data files to customise your portfolio
 - **Vercel Ready**: Optimized for deployment on Vercel
@@ -125,7 +125,7 @@ npm install
    - Replace `public/assets/cv.pdf` with your resume/CV
    - Update `src/app/favicon.ico` with your favicon
 
-3. **Configure EmailJS** (see [EmailJS Setup](https://github.com/doilyuser/developer-portfolio?tab=readme-ov-file#emailjs-setup-) section below)
+3. **Configure EmailJS** (see [EmailJS Setup](#emailjs-setup-%EF%B8%8F) section below)
 
 ### Running Locally
 
@@ -168,13 +168,13 @@ Visit [http://localhost:3000](http://localhost:3000) to see your portfolio.
 ### Optional Customisation
 
 1. **Theme Colours**:
-   - Customize colours in `src/app/globals.css`
+   - Customise colours in `src/app/globals.css`
    - Use a colour from your profile picture for a cohesive look (see tip in `profile.png.example`)
    - See [Theme Options](#theme-options-) for examples.
 
 2. **SEO**:
    - Update metadata in `src/app/layout.tsx`
-   - Customize keywords for better search engine visibility
+   - Customise keywords for better search engine visibility
    - Update structured data in `src/data/schema.data.ts`
 
 3. **Components**:
@@ -183,15 +183,15 @@ Visit [http://localhost:3000](http://localhost:3000) to see your portfolio.
    **Fully Implemented Components:**
    - **Landing.tsx** (`src/data/landing.data.ts`): Configure your profile, introduction, social links, and CV download
    - **Skills.tsx** (`src/data/skills.data.ts`): Interactive carousel with 50+ technology icons. Enable/disable skills by setting `display: true/false`
-   - **Contact.tsx** (`src/data/contact.data.ts`): Contact form, personal contact information, and consent settings. Ensure your [EmailJS Setup](#emailjs-setup-) is correct before enabling.
+   - **Contact.tsx** (`src/data/contact.data.ts`): Contact form, personal contact information, and consent settings. Ensure your [EmailJS Setup](#emailjs-setup-%EF%B8%8F) is correct before enabling.
 
    **Placeholder Components** (coming in future updates):
    - About, Education, Experience, Projects, Achievements, Services, Testimonials, Blog
 
-   Where further configuration is necessary it will be detailed through inline comments in the corresponding data files.
+   Where further configuration is necessary, it will be detailed through inline comments in the corresponding data files.
 
 4. **Content Sections**:
-   - Customize content in the respective data files:
+   - Customise content in the respective data files:
      - `src/data/about.data.ts`
      - `src/data/experience.data.ts`
      - `src/data/projects.data.ts`
@@ -289,7 +289,7 @@ The contact form uses EmailJS to send emails directly from the client side witho
 
 ## Deployment 🌐
 
-This portfolio is optimized for deployment on [Vercel](https://vercel.com/) but can be deployed on any platform that supports Next.js.
+This portfolio is optimised for deployment on [Vercel](https://vercel.com/) but can be deployed on any platform that supports Next.js.
 
 ### Deploying to Vercel
 
@@ -330,7 +330,7 @@ This portfolio template is built with accessibility in mind:
 
 ## SEO Optimisation 🔍
 
-This portfolio is optimized for search engines:
+This portfolio is optimised for search engines:
 
 - **Metadata**: Customisable title, description, and keywords
 - **Structured Data**: JSON-LD schema for better search engine understanding
