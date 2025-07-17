@@ -13,7 +13,7 @@
 [![Turbopack](https://img.shields.io/badge/Turbopack-Enabled-yellow?style=flat&logo=webpack)](https://turbo.build/pack)
 [![Vercel](https://img.shields.io/badge/Optimized%20for-Vercel-black?style=flat&logo=vercel)](https://vercel.com/)
 
-## 📢 Latest Update
+## Latest Update 📢
 
 **Version 0.2.0** - _17/07/25_  
 🎉 **New Skills Component**: Introducing a fully interactive skills showcase with carousel functionality, accessibility features, and comprehensive customisation options.
