@@ -1,5 +1,4 @@
-import { IoMdArrowBack } from 'react-icons/io'
-
+import { ArrowLeft } from '@/components/icons'
 import { ButtonOrLink } from '@/ui'
 import { notFoundData } from '@/data/not-found.data'
 
@@ -19,12 +18,7 @@ export default function NotFound() {
           <p className="mb-8 max-w-md">{data.message}</p>
         </div>
         <div className="flex flex-col items-center gap-4 sm:flex-row">
-          <ButtonOrLink
-            as="link"
-            href={data.links.home.href}
-            variant="secondary"
-            icon={<IoMdArrowBack size={20} aria-hidden="true" />}
-          >
+          <ButtonOrLink as="link" href={data.links.home.href} variant="secondary" icon={<ArrowLeft />}>
             {data.links.home.text}
           </ButtonOrLink>
           <ButtonOrLink as="a" href={data.links.email.href} variant="tertiary">

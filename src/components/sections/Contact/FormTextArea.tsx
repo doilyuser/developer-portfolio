@@ -15,7 +15,7 @@ export function FormTextArea({ field }: { field: ContactFormField }) {
         placeholder={field.placeholder || 'Start typing...'}
         required={field.required}
         aria-required={field.required}
-        className="border-outline/20 block w-full rounded-lg border p-2.5 text-sm"
+        className="block w-full rounded-lg border border-outline/20 p-2.5 text-sm"
       />
     </div>
   )

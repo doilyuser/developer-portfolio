@@ -8,16 +8,16 @@ export function ContactItem({ item }: { item: ContactInfoItem }) {
   return (
     <div className="flex items-center space-x-4">
       <div className="inline-block rounded-lg bg-surface-elevated p-3" aria-hidden="true">
-        <item.icon className="h-8 w-8" />
+        <item.icon className="h-8 w-auto" />
       </div>
       <div>
-        <p className="mb-1 font-bold text-lg">{item.title}</p>
+        <p className="mb-1 text-lg font-bold">{item.title}</p>
         <p>
           <a
             href={href}
             target={item.isExternal ? '_blank' : undefined}
             rel={item.isExternal ? 'noopener noreferrer' : undefined}
-            className="underline underline-offset-4 text-accent hover:text-accent-strong text-lg"
+            className="text-lg text-accent underline underline-offset-4 hover:text-accent-strong"
             aria-label={`${item.title}: action link`}
           >
             {item.text}

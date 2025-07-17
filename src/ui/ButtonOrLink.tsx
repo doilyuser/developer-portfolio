@@ -3,23 +3,34 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { ButtonOrLinkProps } from '@/types/buttonOrLink.types'
+import { tw } from '@/utils'
+import React from 'react'
 
 const ButtonOrLink = forwardRef<HTMLAnchorElement | HTMLButtonElement, ButtonOrLinkProps>(
   function ButtonOrLink(props, ref) {
     const { variant = 'primary', children, icon, iconPosition = 'left', className = '' } = props
 
     // Base styles shared by all buttons
-    const baseStyles =
-      'rounded-full border border-solid transition-colors flex items-center justify-center font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 min-w-[158px] whitespace-nowrap'
+    const baseStyles = tw(
+      'flex h-10 min-w-[158px] items-center justify-center rounded-full border border-solid px-4 text-sm font-medium whitespace-nowrap transition-colors sm:h-12 sm:px-5 sm:text-base'
+    )
+
+    const styledIcon =
+      icon && React.isValidElement(icon)
+        ? React.cloneElement(icon as React.ReactElement<React.HTMLAttributes<HTMLElement>>, {
+            className: clsx((icon.props as { className?: string })?.className, 'h-5 w-auto sm:h-6'),
+            'aria-hidden': true,
+          })
+        : null
 
     // Base styles shared by all button icons
-    const iconStyles = 'flex items-center justify-center'
+    const iconWrapperStyles = tw('flex items-center justify-center')
 
     // Variant-specific styles
     const variantStyles = {
-      primary: 'bg-accent text-surface-primary border-transparent hover:bg-accent-strong',
-      secondary: 'bg-text-primary text-surface-primary border-transparent hover:bg-text-secondary',
-      tertiary: 'border-outline/10 hover:bg-surface-secondary hover:border-transparent',
+      primary: tw('border-transparent bg-accent text-surface-primary hover:bg-accent-strong'),
+      secondary: tw('border-transparent bg-text-primary text-surface-primary hover:bg-text-secondary'),
+      tertiary: tw('border-outline/10 hover:border-transparent hover:bg-surface-secondary'),
     }
 
     const commonProps = {
@@ -29,9 +40,9 @@ const ButtonOrLink = forwardRef<HTMLAnchorElement | HTMLButtonElement, ButtonOrL
     // Render content with icons
     const content = (
       <>
-        {icon && iconPosition === 'left' && <span className={iconStyles}>{icon}</span>}
+        {styledIcon && iconPosition === 'left' && <span className={iconWrapperStyles}>{styledIcon}</span>}
         {children}
-        {icon && iconPosition === 'right' && <span className={iconStyles}>{icon}</span>}
+        {styledIcon && iconPosition === 'right' && <span className={iconWrapperStyles}>{styledIcon}</span>}
       </>
     )
 
@@ -60,10 +71,7 @@ const ButtonOrLink = forwardRef<HTMLAnchorElement | HTMLButtonElement, ButtonOrL
         <button
           ref={ref as React.Ref<HTMLButtonElement>}
           {...commonProps}
-          className={clsx(
-            commonProps.className,
-            disabled ? 'cursor-not-allowed opacity-80' : 'cursor-pointer'
-          )}
+          className={clsx(commonProps.className, disabled ? 'cursor-not-allowed opacity-80' : 'cursor-pointer')}
           {...buttonProps}
           aria-disabled={disabled}
           type={props.type || 'button'}

@@ -10,6 +10,7 @@ import { FormTextArea } from './FormTextArea'
 import { contactData } from '@/data/contact.data'
 import { SubmitStatus } from '@/types/contact.types'
 import { useEmailForm } from '@/hooks'
+import Link from 'next/link'
 
 const data = contactData
 
@@ -30,18 +31,21 @@ export default function Contact() {
 
   return (
     <section
-      id="contact"
-      className="mx-auto min-h-screen w-screen max-w-screen-xl px-4 lg:px-6 flex flex-col"
+      id={data.id}
+      className="mx-auto flex min-h-screen w-screen max-w-screen-xl flex-col px-4 lg:px-6"
+      aria-labelledby={`${data.id}-heading`}
     >
       {/* Header */}
-      <div className="mt-20">
-        <h2 className="text-left font-mono text-xs">{data.title}</h2>
-        <p className="text-accent mb-12 text-right text-9xl underline">{data.subtitle}</p>
+      <div id={`${data.id}-heading`} className="mt-20">
+        <h2 className="text-left font-mono text-xs">
+          <Link href={`/#${data.id}`}>{data.title}</Link>
+        </h2>
+        <p className="mb-12 text-right text-9xl text-accent underline">{data.subtitle}</p>
       </div>
 
       {/* Contact Form */}
-      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:mt-20">
-        <div className="bg-surface-elevated rounded-lg p-6 lg:p-8 flex flex-col justify-center">
+      <div className="grid grid-cols-1 gap-8 lg:mt-20 lg:grid-cols-2">
+        <div className="flex flex-col justify-center rounded-lg bg-surface-elevated p-6 lg:p-8">
           <form className="space-y-6" ref={formRef} onSubmit={handleSubmit} aria-live="polite">
             <p id="form-description" className="sr-only">
               Fill out this form to send me a message. All fields are required.
@@ -55,7 +59,7 @@ export default function Contact() {
             {submitStatus === SubmitStatus.Error && (
               <div
                 ref={errorMessageRef}
-                className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg"
+                className="rounded-lg border border-red-400 bg-red-100 px-4 py-3 text-red-700"
                 role="alert"
                 aria-live="assertive"
                 tabIndex={-1}
@@ -76,7 +80,7 @@ export default function Contact() {
         </div>
 
         {/* Contact Information */}
-        <div className="space-y-8 p-6 lg:p-8 flex flex-col justify-center">
+        <div className="flex flex-col justify-center space-y-8 p-6 lg:p-8">
           <p className="mb-12 font-mono">{data.prelude}</p>
           <ContactItem item={{ ...data.contact.phone, hrefPrefix: 'tel:' }} />
           <ContactItem item={{ ...data.contact.email, hrefPrefix: 'mailto:' }} />

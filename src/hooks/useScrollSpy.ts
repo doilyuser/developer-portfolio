@@ -50,20 +50,15 @@ export function useScrollSpy(options: ScrollSpyOptions): NavigationItem[] {
   const isElementInView = useCallback(
     (element: HTMLElement) => {
       const rect = element.getBoundingClientRect()
-      return (
-        rect.top > -window.innerHeight * viewportThreshold &&
-        rect.top < window.innerHeight * viewportThreshold
-      )
+      return rect.top > -window.innerHeight * viewportThreshold && rect.top < window.innerHeight * viewportThreshold
     },
     [viewportThreshold]
   )
 
   const updateActiveItems = useCallback(() => {
     const updatedItems = items.map((item) => {
-      const element = document.getElementById(item.name.toLowerCase())
-      return element
-        ? { ...item, current: isElementInView(element) }
-        : { ...item }
+      const element = document.getElementById(item.label.toLowerCase())
+      return element ? { ...item, current: isElementInView(element) } : { ...item }
     })
     setActiveItems(updatedItems)
   }, [items, isElementInView])
@@ -71,7 +66,6 @@ export function useScrollSpy(options: ScrollSpyOptions): NavigationItem[] {
   useEffect(() => {
     if (typeof window === 'undefined') return
 
-    // Update active items when scroll position changes
     updateActiveItems()
   }, [y, updateActiveItems])
 

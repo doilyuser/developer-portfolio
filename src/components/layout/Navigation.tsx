@@ -24,14 +24,14 @@ export default function Navigation(): JSX.Element {
 
   const navigationItems = useScrollSpy({
     items: data.navigationItems,
-    viewportThreshold: 0.5,
+    viewportThreshold: 0.3,
   })
 
   const getLinkClasses = (isCurrent: NavigationItem['current']) =>
     clsx(
       isCurrent
         ? 'bg-text-primary text-surface-primary hover:bg-text-secondary'
-        : 'text-text-primary hover:bg-surface-secondary hover:border-transparent'
+        : 'text-text-primary hover:border-transparent hover:bg-surface-secondary'
     )
 
   return (
@@ -40,7 +40,7 @@ export default function Navigation(): JSX.Element {
         as="nav"
         aria-label="Main navigation"
         className={clsx(
-          'bg-surface-primary border-outline/20 fixed top-0 z-10 w-full border-b font-sans',
+          'fixed top-0 z-10 w-full border-b border-outline/20 bg-surface-primary font-sans',
           'transition-transform duration-300 will-change-transform',
           isVisible ? 'translate-y-0' : '-translate-y-full'
         )}
@@ -51,17 +51,11 @@ export default function Navigation(): JSX.Element {
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   <DisclosureButton
-                    className="group text-text-primary hover:bg-text-secondary relative inline-flex items-center justify-center rounded-md p-2 hover:border-transparent"
+                    className="group relative inline-flex items-center justify-center rounded-md p-2 text-text-primary hover:border-transparent hover:bg-text-secondary"
                     aria-label={open ? 'Close main menu' : 'Open main menu'}
                   >
-                    <data.icons.menu
-                      aria-hidden="true"
-                      className="block size-6 group-data-open:hidden"
-                    />
-                    <data.icons.close
-                      aria-hidden="true"
-                      className="hidden size-6 group-data-open:block"
-                    />
+                    <data.icons.menu aria-hidden="true" className="block size-6 group-data-open:hidden" />
+                    <data.icons.close aria-hidden="true" className="hidden size-6 group-data-open:block" />
                     <ScreenReaderSpan text={open ? 'Close main menu' : 'Open main menu'} />
                   </DisclosureButton>
                 </div>
@@ -78,9 +72,9 @@ export default function Navigation(): JSX.Element {
                   </Link>
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
-                      {navigationItems.map((item) => (
+                      {navigationItems.map((item, index) => (
                         <Link
-                          key={item.name}
+                          key={`${item.label}-${index}`}
                           href={item.href}
                           onFocus={handleFocus}
                           onBlur={handleBlur}
@@ -90,7 +84,7 @@ export default function Navigation(): JSX.Element {
                           )}
                           aria-current={item.current ? 'page' : undefined}
                         >
-                          {item.name}
+                          {item.label}
                         </Link>
                       ))}
                     </div>
@@ -101,9 +95,9 @@ export default function Navigation(): JSX.Element {
 
             <DisclosurePanel className="sm:hidden">
               <div className="space-y-1 px-2 pt-2 pb-3">
-                {navigationItems.map((item) => (
+                {navigationItems.map((item, index) => (
                   <Link
-                    key={item.name}
+                    key={`${item.label}-${index}`}
                     href={item.href}
                     onFocus={handleFocus}
                     onBlur={handleBlur}
@@ -113,8 +107,8 @@ export default function Navigation(): JSX.Element {
                     )}
                     aria-current={item.current ? 'page' : undefined}
                   >
-                    <item.icon className="mr-3 h-5 w-5" aria-hidden="true" />
-                    {item.name}
+                    <item.icon className="mr-3 h-5 w-auto" aria-hidden="true" />
+                    {item.label}
                   </Link>
                 ))}
               </div>

@@ -33,9 +33,7 @@ interface ScrollVisibilityOptions {
  *   showOnScrollUp: true
  * });
  */
-export function useScrollVisibility(
-  options: ScrollVisibilityOptions = {}
-): boolean {
+export function useScrollVisibility(options: ScrollVisibilityOptions = {}): boolean {
   const { threshold = 500, showOnScrollUp = false } = options
 
   const [visible, setVisible] = useState(false)

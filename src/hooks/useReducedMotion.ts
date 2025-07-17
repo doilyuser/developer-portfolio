@@ -20,6 +20,7 @@ import { useState, useEffect } from 'react'
  *   behavior: scrollBehavior
  * });
  */
+
 export function useReducedMotion(): boolean {
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
 

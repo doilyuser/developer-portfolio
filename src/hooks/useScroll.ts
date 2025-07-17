@@ -43,8 +43,7 @@ export function useScroll(options: { passive?: boolean } = {}): ScrollState {
   const handleScroll = useCallback(() => {
     setScrollState((prevState) => {
       const currentY = window.scrollY
-      const direction =
-        currentY === 0 ? 'none' : currentY > prevState.y ? 'down' : 'up'
+      const direction = currentY === 0 ? 'none' : currentY > prevState.y ? 'down' : 'up'
 
       return {
         x: window.scrollX,

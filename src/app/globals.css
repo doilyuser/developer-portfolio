@@ -4,10 +4,10 @@
   /* Base semantic colors */
   --surface-primary: #ffffff; /* Light background */
   --text-primary: #171717; /* Main text color */
-  --accent: #ec8668; /* Highlight/accent color */
+  --accent: #ff9258; /* Highlight/accent color */
 
   /* Interactive states */
-  --accent-strong: #d46956; /* Accent hover state */
+  --accent-strong: #de7e4b; /* Accent hover state */
   --text-secondary: #383838; /* Secondary text, hover state */
   --surface-secondary: #f2f2f2; /* Secondary surface, hover state */
 
@@ -36,7 +36,7 @@
   :root {
     --surface-primary: #0a0a0a; /* Dark background */
     --text-primary: #ededed; /* Main text in dark mode */
-    --accent-strong: #ee9880; /* Accent hover in dark mode */
+    --accent-strong: #ff9e6b; /* Accent hover in dark mode */
     --text-secondary: #cccccc; /* Secondary text in dark mode */
     --surface-secondary: #1a1a1a; /* Secondary surface in dark mode */
     --surface-elevated: #000000; /* Box/card in dark mode */
